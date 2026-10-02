@@ -9,7 +9,7 @@ Placeholders to replace / 需要替换的占位：
 
 ---
 
-## AxAIHub <VERSION>
+## Anulus <VERSION>
 
 **Release date / 发布日期:** <DATE>
 **Platform / 平台:** Android 7.0+ · `arm64-v8a` only
@@ -18,7 +18,7 @@ Placeholders to replace / 需要替换的占位：
 
 | File | Size | SHA-256 |
 | --- | --- | --- |
-| `AxAIHub-<VERSION>-arm64-v8a.apk` | <SIZE> | `<SHA256>` |
+| `Anulus-<VERSION>-arm64-v8a.apk` | <SIZE> | `<SHA256>` |
 
 Signing certificate SHA-256 / 签名证书 SHA-256:
 `57:6D:0B:4E:C9:E0:09:2D:6F:AB:55:76:55:11:20:06:12:98:9E:33:1F:42:34:86:8F:25:73:A3:D4:AD:94:EE`

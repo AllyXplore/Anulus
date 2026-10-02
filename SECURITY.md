@@ -51,8 +51,8 @@ We do not run a paid bug-bounty programme. Credit in the release notes is offere
 
 In scope / 属于范围内：
 
-- the AxAIHub application itself, as distributed from the official release pages
-  从官方发行版页面分发的 AxAIHub 应用本身
+- the Anulus application itself, as distributed from the official release pages
+  从官方发行版页面分发的 Anulus 应用本身
 - the local HTTP service, local file handling, plugin loading and permission handling
   本机 HTTP 服务、本地文件处理、插件加载与权限处理
 - the installer's integrity and signing / 安装包完整性与签名

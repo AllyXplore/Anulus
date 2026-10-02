@@ -1,12 +1,12 @@
 ﻿# Third-Party Notices / 第三方组件声明
 
-AxAIHub is proprietary software that builds on open-source work. This file lists the third-party
+Anulus is proprietary software that builds on open-source work. This file lists the third-party
 components distributed with, or used by, the application, together with their licences. Each component
-remains governed by its own licence, which takes precedence over the AxAIHub
+remains governed by its own licence, which takes precedence over the Anulus
 [end-user licence](LICENSE.md) for that component.
 
-AxAIHub 为闭源软件，但建立在众多开源工作之上。本文件列出随应用分发或被应用使用的第三方组件及其许可证。
-每个组件仍受其自身许可证约束；对该组件而言，其许可证优先于 AxAIHub 的[最终用户许可协议](LICENSE.md)。
+Anulus 为闭源软件，但建立在众多开源工作之上。本文件列出随应用分发或被应用使用的第三方组件及其许可证。
+每个组件仍受其自身许可证约束；对该组件而言，其许可证优先于 Anulus 的[最终用户许可协议](LICENSE.md)。
 
 Copies of the licence texts are included in the application package and are also shown in the app under
 **About → Open-source and third-party components**.

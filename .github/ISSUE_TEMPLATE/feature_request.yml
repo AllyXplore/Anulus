@@ -20,7 +20,7 @@ body:
       options:
         - label: I searched existing issues for the same idea / 我搜索过是否已有相同建议
           required: true
-        - label: This is about AxAIHub itself, not a third-party plugin / 这是关于 AxAIHub 本身，而非第三方插件
+        - label: This is about Anulus itself, not a third-party plugin / 这是关于 Anulus 本身，而非第三方插件
           required: true
 
   - type: textarea

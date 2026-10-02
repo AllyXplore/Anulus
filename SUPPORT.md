@@ -32,8 +32,8 @@ Please remove personal information from screenshots and logs before posting.
 
 ## Support policy / 支持范围说明
 
-AxAIHub is provided as is by a very small team. We read reports and fix what we can, but:
-AxAIHub 由极小的团队按现状提供。我们会阅读反馈并尽力修复，但请注意：
+Anulus is provided as is by a very small team. We read reports and fix what we can, but:
+Anulus 由极小的团队按现状提供。我们会阅读反馈并尽力修复，但请注意：
 
 - there is no guaranteed response time and no staffed customer service;
   不承诺响应时限，也没有专职客服；
@@ -44,6 +44,6 @@ AxAIHub 由极小的团队按现状提供。我们会阅读反馈并尽力修复
 - problems caused by modified or unofficially signed builds cannot be investigated.
   经修改或非官方签名版本导致的问题无法排查。
 
-Thanks for using AxAIHub, and for taking the time to write things up carefully.
-感谢使用 AxAIHub，也感谢你认真写下反馈。
+Thanks for using Anulus, and for taking the time to write things up carefully.
+感谢使用 Anulus，也感谢你认真写下反馈。
 

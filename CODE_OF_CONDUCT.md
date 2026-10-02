@@ -8,8 +8,8 @@ Be decent. Discuss the software, not the people. Assume the other side is trying
 ## Scope / 适用范围
 
 This applies to issues, pull requests, discussions and the community channel of this project — anywhere
-people interact about AxAIHub.
-适用于本项目的 issue、合并请求、讨论区与社区频道——任何围绕 AxAIHub 交流的场合。
+people interact about Anulus.
+适用于本项目的 issue、合并请求、讨论区与社区频道——任何围绕 Anulus 交流的场合。
 
 ## Expected / 我们期待
 

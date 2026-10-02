@@ -6,7 +6,7 @@
 
 ## English
 
-**Is AxAIHub free?**
+**Is Anulus free?**
 Yes. The app is free to download and use. Paid value-added features may appear later; if they do, they will be optional
 and clearly marked.
 
@@ -28,8 +28,8 @@ Yes, through the on-device engine plugin. You download a model file once, then i
 no network. Speed and quality depend on your device and the model size; 6 GB of RAM or more is recommended.
 
 **Where is my data stored? Is there a cloud backup?**
-Everything is local: app storage plus the `AxAIHub` folder in shared storage. There is no cloud backup,
-because there is no server. Copy the `AxAIHub` folder to a computer if you want a backup.
+Everything is local: app storage plus the `Anulus` folder in shared storage. There is no cloud backup,
+because there is no server. Copy the `Anulus` folder to a computer if you want a backup.
 
 **Why is it not on Google Play or a Chinese app store?**
 Store listings are a separate process with their own requirements. Direct distribution from a versioned
@@ -37,7 +37,7 @@ release page with published checksums is the current approach. That is also why 
 an "unknown developer" — see [INSTALL.md](INSTALL.md).
 
 **Is the source code available?**
-No. AxAIHub is proprietary software maintained by a very small team; publishing the source is not part of
+No. Anulus is proprietary software maintained by a very small team; publishing the source is not part of
 the plan. Third-party open-source components are credited in
 [../THIRD-PARTY-NOTICES.md](../THIRD-PARTY-NOTICES.md).
 
@@ -48,7 +48,7 @@ it, and refusing simply disables that feature. Full breakdown:
 
 
 **What are `.axext` and `.axex` plugins? Where do I get them?**
-They are the two AxAIHub plugin package formats — plain and encrypted. They are equal formats, not
+They are the two Anulus plugin package formats — plain and encrypted. They are equal formats, not
 different products. There is no third-party plugin marketplace at launch; install only packages from
 authors you trust.
 
@@ -72,7 +72,7 @@ watch/star function on the repository to be notified.
 
 ## 简体中文
 
-**AxAIHub 收费吗？**
+**Anulus 收费吗？**
 免费下载使用。后续可能出现付费增值功能，
 如果有，会是可选的，并明确标注。
 
@@ -93,15 +93,15 @@ watch/star function on the repository to be notified.
 速度和效果取决于设备性能与模型大小，建议 6 GB 及以上运行内存。
 
 **数据存在哪里？有云端备份吗？**
-全部在本地：应用私有存储，加上共享存储里的 `AxAIHub` 文件夹。没有云端备份，因为没有服务器。
-需要备份就把 `AxAIHub` 文件夹拷到电脑上。
+全部在本地：应用私有存储，加上共享存储里的 `Anulus` 文件夹。没有云端备份，因为没有服务器。
+需要备份就把 `Anulus` 文件夹拷到电脑上。
 
 **为什么不上应用商店？**
 上架是另一套流程，有各自的要求。目前采取的方式是从带版本号的发行版页面直接分发，并公布校验值。
 这也是设备会提示“开发者未知”的原因，见 [INSTALL.md](INSTALL.md)。
 
 **开源吗？**
-不开源。AxAIHub 是由极小团队维护的闭源软件，公开源码不在计划内。
+不开源。Anulus 是由极小团队维护的闭源软件，公开源码不在计划内。
 所用第三方开源组件在 [../THIRD-PARTY-NOTICES.md](../THIRD-PARTY-NOTICES.md) 中致谢。
 
 **为什么声明了这么多权限？**
@@ -112,7 +112,7 @@ watch/star function on the repository to be notified.
 
 
 **`.axext` 和 `.axex` 插件是什么？在哪里获取？**
-它们是 AxAIHub 的两种插件包格式——明文与加密，地位平等，不是两种不同产品。
+它们是 Anulus 的两种插件包格式——明文与加密，地位平等，不是两种不同产品。
 首发不开放第三方插件市场，请只安装你信任的作者提供的插件包。
 
 **有 iOS、电脑或平板版本吗？**

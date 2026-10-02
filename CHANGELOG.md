@@ -1,10 +1,10 @@
 # Changelog / 更新日志
 
-All notable changes to AxAIHub are documented here. This project follows
+All notable changes to Anulus are documented here. This project follows
 [Semantic Versioning](https://semver.org/) and the spirit of
 [Keep a Changelog](https://keepachangelog.com/).
 
-本文件记录 AxAIHub 的重要变更，遵循语义化版本规范。
+本文件记录 Anulus 的重要变更，遵循语义化版本规范。
 分类含义：**Added** 新增 · **Changed** 变更 · **Fixed** 修复 · **Removed** 移除 · **Security** 安全。
 
 ---
@@ -53,7 +53,7 @@ Work in progress before the first public release. 首个公开版本发布前的
 Template for future entries / 后续版本条目模板
 
 ## [X.Y.Z] - YYYY-MM-DD
-Installer: AxAIHub-X.Y.Z-arm64-v8a.apk
+Installer: Anulus-X.Y.Z-arm64-v8a.apk
 SHA-256: <checksum>
 
 ### Added / 新增

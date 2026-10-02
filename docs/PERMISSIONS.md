@@ -2,10 +2,10 @@
 
 [English](#english) · [简体中文](#简体中文)
 
-This page lists every permission declared by AxAIHub, why it exists, and what happens if you refuse it.
+This page lists every permission declared by Anulus, why it exists, and what happens if you refuse it.
 Nothing here is used for profiling or content upload.
 
-本页列出 AxAIHub 声明的全部权限、存在的原因，以及拒绝后的影响。
+本页列出 Anulus 声明的全部权限、存在的原因，以及拒绝后的影响。
 这些权限都不用于画像或内容上传。
 
 ---
@@ -44,7 +44,7 @@ Nothing here is used for profiling or content upload.
 | `RECORD_AUDIO` | Voice input, recording transcription | Voice features unavailable |
 | `READ_MEDIA_IMAGES` / `VIDEO` / `AUDIO` | Opening your media in the image editor and attaching files | You can still use files picked through the system picker |
 | `READ_EXTERNAL_STORAGE` (Android 12L and older) | Reading files on older systems | File features limited on those systems |
-| `MANAGE_EXTERNAL_STORAGE` | The built-in file manager, and reading or writing the shared `AxAIHub` folder across the whole storage. This is a broad permission — it is requested only if you use the file manager, and it is never used to scan your storage for analytics | File manager unavailable; other features keep working through the system picker |
+| `MANAGE_EXTERNAL_STORAGE` | The built-in file manager, and reading or writing the shared `Anulus` folder across the whole storage. This is a broad permission — it is requested only if you use the file manager, and it is never used to scan your storage for analytics | File manager unavailable; other features keep working through the system picker |
 | `ACCESS_COARSE_LOCATION` | Region-level features | Location-aware tools unavailable |
 | `ACCESS_FINE_LOCATION` | Tools that need your precise position when you invoke them | Those tools unavailable |
 | `READ_CONTACTS` | Assistant tools that look up a contact when you ask them to | Those tools unavailable |
@@ -99,7 +99,7 @@ If a build ever behaves otherwise, treat it as a security issue and report it �
 | `RECORD_AUDIO` 麦克风 | 语音输入、录音转写 | 语音功能不可用 |
 | `READ_MEDIA_IMAGES` / `VIDEO` / `AUDIO` 媒体读取 | 在图片编辑器中打开你的媒体文件、添加附件 | 仍可通过系统选择器挑选文件使用 |
 | `READ_EXTERNAL_STORAGE`（安卓 12L 及更早） | 在旧系统上读取文件 | 这些系统上的文件功能受限 |
-| `MANAGE_EXTERNAL_STORAGE` 所有文件访问 | 内置文件管理器，以及在整个存储范围读写共享的 `AxAIHub` 文件夹。这是范围很大的权限——仅在你使用文件管理器时申请，且绝不用于扫描你的存储做统计 | 文件管理器不可用，其余功能仍可通过系统选择器工作 |
+| `MANAGE_EXTERNAL_STORAGE` 所有文件访问 | 内置文件管理器，以及在整个存储范围读写共享的 `Anulus` 文件夹。这是范围很大的权限——仅在你使用文件管理器时申请，且绝不用于扫描你的存储做统计 | 文件管理器不可用，其余功能仍可通过系统选择器工作 |
 | `ACCESS_COARSE_LOCATION` 粗略位置 | 地区级功能 | 位置相关工具不可用 |
 | `ACCESS_FINE_LOCATION` 精确位置 | 你主动调用的、需要精确位置的工具 | 这些工具不可用 |
 | `READ_CONTACTS` 通讯录 | 你要求助手查找联系人时使用 | 相关工具不可用 |

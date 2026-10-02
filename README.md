@@ -1,6 +1,6 @@
 <div align="center">
 
-# AxAIHub
+# Anulus
 
 **The AI hub of your Android phone — one AI assistant commanding your apps, files, tools, and devices, all on-device.**
 
@@ -21,21 +21,21 @@
 
 ---
 
-## What is AxAIHub
+## What is Anulus
 
-AxAIHub is the **AI hub of your Android phone** — far more than a chat interface. It is a unified platform where an AI assistant sits at the center of a suite of on-device tools — office documents, image editing, file management, project boards, notes, and small utilities — and can **directly operate them** through a local tool bus, with no cloud relay required.
+Anulus is the **AI hub of your Android phone** — far more than a chat interface. It is a unified platform where an AI assistant sits at the center of a suite of on-device tools — office documents, image editing, file management, project boards, notes, and small utilities — and can **directly operate them** through a local tool bus, with no cloud relay required.
 
-Unlike most AI apps that are thin chat wrappers around cloud APIs, AxAIHub is built around a fundamentally different philosophy: **everything that can run locally, runs locally.** Cloud AI providers are entirely optional — you bring your own credentials and endpoints, or you run models fully offline using the on-device engine.
+Unlike most AI apps that are thin chat wrappers around cloud APIs, Anulus is built around a fundamentally different philosophy: **everything that can run locally, runs locally.** Cloud AI providers are entirely optional — you bring your own credentials and endpoints, or you run models fully offline using the on-device engine.
 
 The app is built with **Tauri 2.0**, combining a native Android shell with a web-based UI layer, delivering a responsive experience while maintaining full access to device capabilities.
 
-**Built-in depth that grows with you.** AxAIHub ships with a 35+ tool system across 9 capability domains, and its **runtime integration interface** lets you plug your own execution environments in on top of the runtimes already bundled (Python 3.11 built in, Termux optional) — the ceiling is set by you, not by us. System-level access (Shizuku/Root) stays strictly opt-in for those who need it. Automation and deeper system capabilities remain firmly on our roadmap — they take long-term refinement to build right, and restraint like skipping blind screen-tapping is a compliance choice for the long haul, not a lack of ambition.
+**Built-in depth that grows with you.** Anulus ships with a 35+ tool system across 9 capability domains, and its **runtime integration interface** lets you plug your own execution environments in on top of the runtimes already bundled (Python 3.11 built in, Termux optional) — the ceiling is set by you, not by us. System-level access (Shizuku/Root) stays strictly opt-in for those who need it. Automation and deeper system capabilities remain firmly on our roadmap — they take long-term refinement to build right, and restraint like skipping blind screen-tapping is a compliance choice for the long haul, not a lack of ambition.
 
 ---
 
 ## Architecture Overview
 
-AxAIHub's architecture is designed around a **local tool bus** pattern, connecting the AI engine with all on-device tools through a unified command layer:
+Anulus's architecture is designed around a **local tool bus** pattern, connecting the AI engine with all on-device tools through a unified command layer:
 
 ```mermaid
 flowchart TB
@@ -232,7 +232,7 @@ This is the deepest on-device tooling available to an AI agent on Android — yo
 
 ## Feature Integration: How Everything Works Together
 
-What makes AxAIHub different is not the individual features, but how they are **woven together** through the AI assistant:
+What makes Anulus different is not the individual features, but how they are **woven together** through the AI assistant:
 
 ### AI + Office
 The AI assistant can directly create, edit, and format documents. You can say "summarize this document into a table" and the AI will open the office tool, create the table, and populate it — all without you switching apps.
@@ -263,7 +263,7 @@ All of this happens **on-device**, with no data leaving your phone unless you've
 
 ## Multi-Device Connectivity
 
-AxAIHub supports connecting to other devices through multiple channels:
+Anulus supports connecting to other devices through multiple channels:
 
 ### Bluetooth Devices
 - Pair with wearables, smart bands, and IoT devices
@@ -272,11 +272,11 @@ AxAIHub supports connecting to other devices through multiple channels:
 
 ### Nearby WiFi
 - Discover and connect to devices on the same network
-- File sharing between AxAIHub instances
+- File sharing between Anulus instances
 - Collaborative editing across devices
 
 ### Phone-to-Phone
-- Direct connection between two AxAIHub instances
+- Direct connection between two Anulus instances
 - Shared clipboard and task delegation
 - Synchronized AI context across devices
 
@@ -298,7 +298,7 @@ All connections are **encrypted and peer-to-peer**. There is no central server, 
 
 ## Plugin System
 
-AxAIHub features an **open plugin format** that allows third-party developers to extend the app's capabilities. The plugin system is fully open-source and documented in the [axaihub-plugin-system](https://github.com/AllyXplore/axaihub-plugin-system) repository.
+Anulus features an **open plugin format** that allows third-party developers to extend the app's capabilities. The plugin system is fully open-source and documented in the [anulus-plugin-system](https://github.com/AllyXplore/anulus-plugin-system) repository.
 
 - **Package formats**: plain and encrypted formats
 - **Sandbox isolation**: Each plugin runs in its own WebView with a unique origin (axplugin://<plugin-id>), preventing cross-plugin data access
@@ -306,7 +306,7 @@ AxAIHub features an **open plugin format** that allows third-party developers to
 - **Resource management**: Inactive plugins are unloaded to prevent memory leaks
 - **Lifecycle**: Plugins are loaded on demand and released when not in use
 
-The plugin format specification, packaging CLI (`axbuild`), and complete documentation are open-source at [github.com/AllyXplore/axaihub-plugin-system](https://github.com/AllyXplore/axaihub-plugin-system).
+The plugin format specification, packaging CLI (`axbuild`), and complete documentation are open-source at [github.com/AllyXplore/anulus-plugin-system](https://github.com/AllyXplore/anulus-plugin-system).
 
 ---
 
@@ -316,9 +316,9 @@ Official releases are published as attachments on the release page below:
 
 | Source | Link |
 | --- | --- |
-| GitHub | https://github.com/AllyXplore/AxAIHub/releases/latest |
+| GitHub | https://github.com/AllyXplore/Anulus/releases/latest |
 
-Installer file name pattern: AxAIHub-<version>-aarm64-v8a.apk
+Installer file name pattern: Anulus-<version>-aarm64-v8a.apk
 
 Only files downloaded from the page above are official. Every release lists a SHA-256 checksum and the signing certificate fingerprint — please check them before installing. See [docs/VERIFY.md](docs/VERIFY.md).
 
@@ -343,7 +343,7 @@ Only files downloaded from the page above are official. Every release lists a SH
 
 ## About This Repository
 
-This is the **distribution and documentation** repository for AxAIHub. It contains:
+This is the **distribution and documentation** repository for Anulus. It contains:
 
 `
 .
@@ -361,15 +361,15 @@ This is the **distribution and documentation** repository for AxAIHub. It contai
 └── README.zh-CN.md       Chinese version of this file
 `
 
-**The application source code is not published here.** AxAIHub is proprietary software maintained by a very small team. Third-party open-source components used in the app are credited in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+**The application source code is not published here.** Anulus is proprietary software maintained by a very small team. Third-party open-source components used in the app are credited in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
 
-The plugin format specification, packaging CLI (`axbuild`), and documentation are **open-source** in the [axaihub-plugin-system](https://github.com/AllyXplore/axaihub-plugin-system) repository.
+The plugin format specification, packaging CLI (`axbuild`), and documentation are **open-source** in the [anulus-plugin-system](https://github.com/AllyXplore/anulus-plugin-system) repository.
 
 ---
 
 ## Feedback & Support
 
-- **Bug reports & feature requests**: [Open an issue](https://github.com/AllyXplore/AxAIHub/issues/new/choose)
+- **Bug reports & feature requests**: [Open an issue](https://github.com/AllyXplore/Anulus/issues/new/choose)
 - **Security issues**: Follow [SECURITY.md](SECURITY.md) — do not open a public issue
 - **Community**: [QQ Group](https://pd.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&appChannel=share&attaContentID=7824cc8ef7d54615a238e9f4ee7f38eb&biz=ka&businessType=5&from=246611&inviteCode=2LWrRnNgUhY&mainSourceId=qr_code&subSourceId=pic4&b=5)
 - **Support policy**: [SUPPORT.md](SUPPORT.md)
@@ -380,8 +380,8 @@ The plugin format specification, packaging CLI (`axbuild`), and documentation ar
 
 Copyright (c) 2026 AllyXplore. All rights reserved.
 
-AxAIHub is provided "as is", without warranty of any kind. "AxAIHub" and "AllyXplore" are names created and used by the developer; the rights in these names belong to the developer and they may not be used for other products without permission. Read [LICENSE](LICENSE) before installing.
+Anulus is provided "as is", without warranty of any kind. "Anulus" and "AllyXplore" are names created and used by the developer; the rights in these names belong to the developer and they may not be used for other products without permission. Read [LICENSE](LICENSE) before installing.
 
 <div align="center">
-<sub>AxAIHub · local-first · privacy-respecting · maintained by Ax丶现 (AllyXplore)</sub>
+<sub>Anulus · local-first · privacy-respecting · maintained by Ax丶现 (AllyXplore)</sub>
 </div>

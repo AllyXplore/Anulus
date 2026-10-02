@@ -1,6 +1,6 @@
 <div align="center">
 
-# AxAIHub
+# Anulus
 
 **你的手机 AI 中枢 —— 一个 AI，指挥你的应用、文件、工具与设备，全部在本地运行。**
 
@@ -23,19 +23,19 @@
 
 ## 这是什么
 
-AxAIHub 是**你手机的 AI 中枢**，远不止是一个聊天界面。它是一个统一的平台：AI 助手位于核心，周围环绕着一整套设备端工具——文档、图片编辑、文件管理、项目看板、笔记和小工具——并通过**本地工具总线**直接操控它们，无需任何云端中转。
+Anulus 是**你手机的 AI 中枢**，远不止是一个聊天界面。它是一个统一的平台：AI 助手位于核心，周围环绕着一整套设备端工具——文档、图片编辑、文件管理、项目看板、笔记和小工具——并通过**本地工具总线**直接操控它们，无需任何云端中转。
 
-与大多数仅是云端 API 的聊天外壳的 AI 应用不同，AxAIHub 围绕一个根本不同的理念构建：**能在本地跑的就本地跑。** 云端 AI 服务完全可选——你自带凭据和接口地址，或者使用设备端引擎完全离线运行模型。
+与大多数仅是云端 API 的聊天外壳的 AI 应用不同，Anulus 围绕一个根本不同的理念构建：**能在本地跑的就本地跑。** 云端 AI 服务完全可选——你自带凭据和接口地址，或者使用设备端引擎完全离线运行模型。
 
 应用基于 **Tauri 2.0** 构建，将原生 Android 外壳与基于 Web 的 UI 层结合，在保持对设备能力的完全访问的同时提供流畅的体验。
 
-**内置深度，且随你生长。** AxAIHub 开箱即得 35+ 工具、9 大类能力，并通过**运行环境接入接口**，让你在已内置的运行环境（内置 Python 3.11，可选 Termux）之上，再接入自己的执行环境——能力上限由你决定，而非我们。系统级权限（Shizuku/Root）严格按需开启，需要的人自行打开。自动化和更强大的系统能力，我们从未停止推进——只是更需要长期沉淀，稳步打磨到位；而不做全自动盲点触屏自动化，是出于合规的长期取舍，绝非能力所限。
+**内置深度，且随你生长。** Anulus 开箱即得 35+ 工具、9 大类能力，并通过**运行环境接入接口**，让你在已内置的运行环境（内置 Python 3.11，可选 Termux）之上，再接入自己的执行环境——能力上限由你决定，而非我们。系统级权限（Shizuku/Root）严格按需开启，需要的人自行打开。自动化和更强大的系统能力，我们从未停止推进——只是更需要长期沉淀，稳步打磨到位；而不做全自动盲点触屏自动化，是出于合规的长期取舍，绝非能力所限。
 
 ---
 
 ## 架构总览
 
-AxAIHub 的架构围绕**本地工具总线**模式设计：
+Anulus 的架构围绕**本地工具总线**模式设计：
 
 ```mermaid
 flowchart TB
@@ -232,7 +232,7 @@ AI 不只是聊天，还能通过 35+ 内置工具系统**真实操控你的手�
 
 ## 功能协同：一切如何配合工作
 
-AxAIHub 的不同之处不在于单个功能，而在于它们如何通过 AI 助手**编织在一起**：
+Anulus 的不同之处不在于单个功能，而在于它们如何通过 AI 助手**编织在一起**：
 
 ### AI + 办公
 AI 助手可以直接创建、编辑和格式化文档。你可以说"把这份文档总结成表格"，AI 就会打开办公工具、创建表格并填入内容——全程无需切换应用。
@@ -263,7 +263,7 @@ AI 可以执行终端命令、解释输出、建议下一步操作。这创建�
 
 ## 多设备互联
 
-AxAIHub 支持通过多种渠道连接其他设备：
+Anulus 支持通过多种渠道连接其他设备：
 
 ### 蓝牙设备
 - 与可穿戴设备、智能手环和 IoT 设备配对
@@ -272,11 +272,11 @@ AxAIHub 支持通过多种渠道连接其他设备：
 
 ### 附近 WiFi
 - 发现并连接到同一网络上的设备
-- 在 AxAIHub 实例之间共享文件
+- 在 Anulus 实例之间共享文件
 - 跨设备协同编辑
 
 ### 手机到手机
-- 两个 AxAIHub 实例之间的直接连接
+- 两个 Anulus 实例之间的直接连接
 - 共享剪贴板和任务委派
 - 跨设备同步 AI 上下文
 
@@ -298,7 +298,7 @@ AxAIHub 支持通过多种渠道连接其他设备：
 
 ## 插件体系
 
-AxAIHub 拥有一个**开放的插件格式**，允许第三方开发者扩展应用能力。插件体系完全开源，文档见 [axaihub-plugin-system](https://github.com/AllyXplore/axaihub-plugin-system) 仓库。
+Anulus 拥有一个**开放的插件格式**，允许第三方开发者扩展应用能力。插件体系完全开源，文档见 [anulus-plugin-system](https://github.com/AllyXplore/anulus-plugin-system) 仓库。
 
 - **包格式**：（明文和加密两种格式）
 - **沙箱隔离**：每个插件在自己的 WebView 中运行，使用独立源（axplugin://<插件ID>），防止跨插件数据访问
@@ -306,7 +306,7 @@ AxAIHub 拥有一个**开放的插件格式**，允许第三方开发者扩展�
 - **资源管理**：非活跃插件被卸载以防止内存泄漏
 - **生命周期**：插件按需加载，不用时释放
 
-插件格式规范、打包 CLI（`axbuild`）和完整文档已在 [github.com/AllyXplore/axaihub-plugin-system](https://github.com/AllyXplore/axaihub-plugin-system) 开源。
+插件格式规范、打包 CLI（`axbuild`）和完整文档已在 [github.com/AllyXplore/anulus-plugin-system](https://github.com/AllyXplore/anulus-plugin-system) 开源。
 
 ---
 
@@ -316,9 +316,9 @@ AxAIHub 拥有一个**开放的插件格式**，允许第三方开发者扩展�
 
 | 来源 | 地址 |
 | --- | --- |
-| GitHub | https://github.com/AllyXplore/AxAIHub/releases/latest |
+| GitHub | https://github.com/AllyXplore/Anulus/releases/latest |
 
-安装包文件名规则：AxAIHub-<版本号>-aarm64-v8a.apk
+安装包文件名规则：Anulus-<版本号>-aarm64-v8a.apk
 
 只有从上面页面下载的文件才是官方版本。每个发行版都会公布安装包的 SHA-256 校验值和签名证书指纹，安装前请先核对，方法见 [docs/VERIFY.md](docs/VERIFY.md)。
 
@@ -343,7 +343,7 @@ AxAIHub 拥有一个**开放的插件格式**，允许第三方开发者扩展�
 
 ## 关于本仓库
 
-这里是 AxAIHub 的**分发与文档**仓库，包含：
+这里是 Anulus 的**分发与文档**仓库，包含：
 
 `
 .
@@ -361,15 +361,15 @@ AxAIHub 拥有一个**开放的插件格式**，允许第三方开发者扩展�
 └── README.zh-CN.md       本文件中文版
 `
 
-**应用源代码不在此处公开。** AxAIHub 是由极小团队维护的闭源软件。应用所用到的第三方开源组件在 [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) 中列出并致谢。
+**应用源代码不在此处公开。** Anulus 是由极小团队维护的闭源软件。应用所用到的第三方开源组件在 [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) 中列出并致谢。
 
-插件格式规范、打包 CLI（`axbuild`）和文档已在 [axaihub-plugin-system](https://github.com/AllyXplore/axaihub-plugin-system) 仓库**开源**。
+插件格式规范、打包 CLI（`axbuild`）和文档已在 [anulus-plugin-system](https://github.com/AllyXplore/anulus-plugin-system) 仓库**开源**。
 
 ---
 
 ## 反馈与支持
 
-- **缺陷报告与功能建议**：[提交 Issue](https://github.com/AllyXplore/AxAIHub/issues/new/choose)
+- **缺陷报告与功能建议**：[提交 Issue](https://github.com/AllyXplore/Anulus/issues/new/choose)
 - **安全问题**：请按 [SECURITY.md](SECURITY.md) 私下反馈，不要公开提交
 - **社区**：[QQ 群](https://pd.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&appChannel=share&attaContentID=7824cc8ef7d54615a238e9f4ee7f38eb&biz=ka&businessType=5&from=246611&inviteCode=2LWrRnNgUhY&mainSourceId=qr_code&subSourceId=pic4&b=5)
 - **支持范围**：[SUPPORT.md](SUPPORT.md)
@@ -380,8 +380,8 @@ AxAIHub 拥有一个**开放的插件格式**，允许第三方开发者扩展�
 
 Copyright (c) 2026 AllyXplore. 保留所有权利。
 
-本软件"按现状"提供，不附带任何形式的担保。"AxAIHub"与"AllyXplore"为开发者独创并使用的名称，相关名称权益归开发者所有，未经许可不得用于其他产品。安装前请阅读 [LICENSE](LICENSE)。
+本软件"按现状"提供，不附带任何形式的担保。"Anulus"与"AllyXplore"为开发者独创并使用的名称，相关名称权益归开发者所有，未经许可不得用于其他产品。安装前请阅读 [LICENSE](LICENSE)。
 
 <div align="center">
-<sub>AxAIHub · 本地优先 · 尊重隐私 · 由 Ax丶现（AllyXplore）维护</sub>
+<sub>Anulus · 本地优先 · 尊重隐私 · 由 Ax丶现（AllyXplore）维护</sub>
 </div>

@@ -1,6 +1,6 @@
 # Privacy Policy / 隐私政策
 
-**Application:** AxAIHub (`com.allyxplore.axaihub`) · **Publisher:** AllyXplore
+**Application:** Anulus (`com.allyxplore.anulus`) · **Publisher:** AllyXplore
 **Last updated:** 2026-08-19
 
 > English first, Chinese below. 英文在前，中文在后。两个版本如有歧义，以中文版本为准。
@@ -11,7 +11,7 @@
 
 ### Summary
 
-AxAIHub is designed local-first. There is no AxAIHub server: we operate no backend, we hold no user
+Anulus is designed local-first. There is no Anulus server: we operate no backend, we hold no user
 accounts, and we receive none of your content. Your data lives on your device. The only outbound network
 traffic the app initiates on your behalf goes to endpoints **you** configure.
 
@@ -36,7 +36,7 @@ No such collection is enabled today; if it is enabled later, this policy will be
 
 Most of your data — conversations, preferences, on-device models, plugin data, entitlement flags — is
 stored in your device's local storage: the app's own cache, date-organised working files, and the
-`AxAIHub` folder visible in your file manager.
+`Anulus` folder visible in your file manager.
 
 Uninstalling the app, clearing its data, or resetting the device **permanently deletes** this data. Keep
 your own backups. (There is currently no paid membership system; the entitlement field is reserved for
@@ -103,7 +103,7 @@ see [SUPPORT.md](SUPPORT.md).
 
 ### 摘要
 
-AxAIHub 以本地优先为设计原则。我们没有 AxAIHub 服务器：不运营后端、不持有用户账号、也拿不到你的任何内容。
+Anulus 以本地优先为设计原则。我们没有 Anulus 服务器：不运营后端、不持有用户账号、也拿不到你的任何内容。
 你的数据存在你的设备上。应用代你发起的对外网络请求，只会发往**你自己配置的**接口。
 
 | 我们不会 | 说明 |
@@ -124,7 +124,7 @@ AxAIHub 以本地优先为设计原则。我们没有 AxAIHub 服务器：不运
 ### 二、数据存储
 
 你的大部分数据（聊天记录、设置偏好、本地模型与插件数据、权益状态等）保存在设备本地存储中：
-应用自身缓存、按日期组织的文件，以及文件管理中可见的 `AxAIHub` 文件夹。
+应用自身缓存、按日期组织的文件，以及文件管理中可见的 `Anulus` 文件夹。
 
 卸载应用、清除数据或恢复出厂设置将**永久删除**这些数据，请自行备份。
 （当前尚无会员体系，“权益状态”仅为后续增值服务预留的数据字段。）

@@ -5,11 +5,11 @@ Thank you for the interest. A short note on how this repository works, so nobody
 
 ## This is a distribution repository / 这是分发仓库
 
-AxAIHub is proprietary software. This repository holds release installers, documentation and the issue
+Anulus is proprietary software. This repository holds release installers, documentation and the issue
 tracker — **not** the application source code. Pull requests containing application code cannot be
 accepted, and code contributions are not solicited here.
 
-AxAIHub 为闭源软件。本仓库存放发布安装包、文档和问题反馈入口，**不包含**应用源代码。
+Anulus 为闭源软件。本仓库存放发布安装包、文档和问题反馈入口，**不包含**应用源代码。
 因此无法接受包含应用代码的合并请求，也不在此征集代码贡献。
 
 ## What is genuinely welcome / 真正欢迎的参与
@@ -50,6 +50,6 @@ Participation in this repository is subject to [CODE_OF_CONDUCT.md](CODE_OF_COND
 ## Licence of your contribution / 贡献的许可
 
 By submitting a documentation or translation pull request, you agree that your contribution may be
-published in this repository and reused in AxAIHub documentation, with attribution in the commit history.
-提交文档或翻译类合并请求，即表示你同意该内容可在本仓库发布，并可用于 AxAIHub 的文档，
+published in this repository and reused in Anulus documentation, with attribution in the commit history.
+提交文档或翻译类合并请求，即表示你同意该内容可在本仓库发布，并可用于 Anulus 的文档，
 署名以提交记录为准。

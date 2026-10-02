@@ -1,13 +1,13 @@
 blank_issues_enabled: false
 contact_links:
   - name: Installation help / 安装求助
-    url: https://github.com/AllyXplore/AxAIHub/blob/main/docs/INSTALL.md
+    url: https://github.com/AllyXplore/Anulus/blob/main/docs/INSTALL.md
     about: Read the installation guide before opening an issue / 提交问题前请先看安装指南
   - name: Frequently asked questions / 常见问题
-    url: https://github.com/AllyXplore/AxAIHub/blob/main/docs/FAQ.md
+    url: https://github.com/AllyXplore/Anulus/blob/main/docs/FAQ.md
     about: Most questions are answered here / 多数问题这里已有答案
   - name: Security report / 安全问题反馈
-    url: https://github.com/AllyXplore/AxAIHub/blob/main/SECURITY.md
+    url: https://github.com/AllyXplore/Anulus/blob/main/SECURITY.md
     about: Report vulnerabilities privately, not as a public issue / 请私下反馈漏洞，不要公开提交
   - name: Community channel / 社区频道
     url: https://pd.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&appChannel=share&attaContentID=7824cc8ef7d54615a238e9f4ee7f38eb&biz=ka&businessType=5&from=246611&inviteCode=2LWrRnNgUhY&mainSourceId=qr_code&subSourceId=pic4&b=5

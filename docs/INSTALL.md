@@ -22,10 +22,10 @@ with "package appears to be invalid" on a very old or budget device, it is likel
 
 Get it from the official page:
 
-- GitHub: https://github.com/AllyXplore/AxAIHub/releases/latest
+- GitHub: https://github.com/AllyXplore/Anulus/releases/latest
 
 
-Download the file named `AxAIHub-<version>-arm64-v8a.apk`.
+Download the file named `Anulus-<version>-arm64-v8a.apk`.
 
 ### 3. Verify the download (recommended)
 
@@ -54,7 +54,7 @@ app distributed outside the Play Store; choose to install anyway if you have ver
 
 ### 5. Install and open
 
-Tap the file, confirm, and wait for it to finish. Open AxAIHub from your app drawer.
+Tap the file, confirm, and wait for it to finish. Open Anulus from your app drawer.
 
 ### 6. First run
 
@@ -75,7 +75,7 @@ to uninstall (losing data) first.
 
 ### 8. Uninstalling
 
-Uninstall as usual. Your conversations, notes and settings are removed with the app. The `AxAIHub` folder
+Uninstall as usual. Your conversations, notes and settings are removed with the app. The `Anulus` folder
 in shared storage may remain — delete it manually if you want a clean removal.
 
 ### Troubleshooting
@@ -108,10 +108,10 @@ in shared storage may remain — delete it manually if you want a clean removal.
 
 只从官方页面获取：
 
-- GitHub：https://github.com/AllyXplore/AxAIHub/releases/latest
+- GitHub：https://github.com/AllyXplore/Anulus/releases/latest
 
 
-下载名为 `AxAIHub-<版本号>-arm64-v8a.apk` 的文件。
+下载名为 `Anulus-<版本号>-arm64-v8a.apk` 的文件。
 
 ### 三、校验下载（建议执行）
 
@@ -135,7 +135,7 @@ in shared storage may remain — delete it manually if you want a clean removal.
 
 ### 五、安装并打开
 
-点击文件，确认安装，等待完成，然后在桌面或应用列表中打开 AxAIHub。
+点击文件，确认安装，等待完成，然后在桌面或应用列表中打开 Anulus。
 
 ### 六、首次使用
 
@@ -154,7 +154,7 @@ in shared storage may remain — delete it manually if you want a clean removal.
 ### 八、卸载
 
 按常规方式卸载即可。聊天记录、笔记与设置会随应用一并删除。
-共享存储中的 `AxAIHub` 文件夹可能保留，如需彻底清除请手动删除。
+共享存储中的 `Anulus` 文件夹可能保留，如需彻底清除请手动删除。
 
 ### 常见故障
 

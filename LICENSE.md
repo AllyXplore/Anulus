@@ -1,6 +1,6 @@
 # End-User Licence Agreement / 最终用户许可协议
 
-**Software:** AxAIHub (Android application, package `com.allyxplore.axaihub`)
+**Software:** Anulus (Android application, package `com.allyxplore.anulus`)
 **Licensor:** AllyXplore ("we", "us")
 **Last updated:** 2026-08-19
 
@@ -15,12 +15,12 @@ Copyright (c) 2026 AllyXplore. All rights reserved.
 ## English
 
 **IMPORTANT — READ BEFORE INSTALLING.** By downloading, installing, copying, accessing or otherwise
-using AxAIHub, you agree to be bound by this Agreement. If you do not agree, do not use the software.
+using Anulus, you agree to be bound by this Agreement. If you do not agree, do not use the software.
 
 ### 1. Licence grant
 
 We grant you a personal, non-exclusive, non-transferable, revocable licence to install and use one copy
-of AxAIHub on devices you own or control, for your own lawful purposes. No other rights are granted.
+of Anulus on devices you own or control, for your own lawful purposes. No other rights are granted.
 
 ### 2. Restrictions
 
@@ -43,19 +43,19 @@ The software, including its interface, code, assets and design, is protected by 
 laws. All rights not expressly granted are reserved. Parts of the code were produced with AI assistance
 and subsequently reviewed and integrated by hand.
 
-"AxAIHub" and "AllyXplore" are names created by the developer. Although not registered as trademarks,
+"Anulus" and "AllyXplore" are names created by the developer. Although not registered as trademarks,
 the rights in these names belong to the developer; they may not be used for other products, forks or
 distributions without permission.
 
 ### 4. Third-party open-source components
 
-AxAIHub includes third-party open-source components, each licensed under its own terms. Those terms
+Anulus includes third-party open-source components, each licensed under its own terms. Those terms
 govern the corresponding component and take precedence over this Agreement for that component. The full
 list is in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
 
 ### 5. Plugins and extensions
 
-AxAIHub can install third-party plugins (distributed as `.axext` or `.axex` packages). Plugins are
+Anulus can install third-party plugins (distributed as `.axext` or `.axex` packages). Plugins are
 independently developed by their authors. Their function, content, behaviour and safety are the
 responsibility of those authors.
 
@@ -117,12 +117,12 @@ of a parent or guardian.
 
 ## 简体中文
 
-**重要提示——安装前请阅读。** 一旦您下载、安装、复制、访问或以其他方式使用 AxAIHub，即表示您同意接受本协议约束。
+**重要提示——安装前请阅读。** 一旦您下载、安装、复制、访问或以其他方式使用 Anulus，即表示您同意接受本协议约束。
 如不同意，请勿使用本软件。
 
 ### 一、许可授予
 
-我们授予您个人的、非排他的、不可转让的、可撤销的许可，允许您在自己拥有或控制的设备上安装并使用一份 AxAIHub，
+我们授予您个人的、非排他的、不可转让的、可撤销的许可，允许您在自己拥有或控制的设备上安装并使用一份 Anulus，
 用于合法目的。除此之外不授予其他权利。
 
 ### 二、使用限制
@@ -142,7 +142,7 @@ of a parent or guardian.
 本软件及其界面、代码、素材与设计受著作权法及其他法律保护，未明确授予的权利均予保留。
 部分代码由 AI 辅助生成，并经人工审阅与整合。
 
-“AxAIHub”与“AllyXplore”为开发者独创的名称。虽尚未注册商标，相关名称权益归开发者所有，
+“Anulus”与“AllyXplore”为开发者独创的名称。虽尚未注册商标，相关名称权益归开发者所有，
 未经许可不得用于其他产品、分支或分发版本。
 
 ### 四、第三方开源组件
