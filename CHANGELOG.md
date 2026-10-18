@@ -18,21 +18,26 @@ Work in progress before the first public release. 首个公开版本发布前的
 
 ---
 
-## [3.1.1] - not yet released / 尚未发布
+## [3.1.4] - 2026-10-18
 
-> First public release. Fill this section in when the installer is final, then move it above the
-> `Unreleased` block and tag the repository.
-> 首个公开版本。安装包定稿后补全本节，将其置于 `Unreleased` 之上，并为仓库打标签。
+First public release.
+首个公开版本。
 
 ### Added / 新增
-- Local-first AI assistant: works with cloud providers you configure, or with a fully on-device engine.
-  本地优先的 AI 助手：可接自行配置的云端服务，或使用完全离线的设备端引擎。
+- AI assistant that operates your on-device tools: works with cloud providers you configure, or with a fully on-device engine.
+  可操作设备端工具的 AI 助手：可接自行配置的云端服务，或使用完全离线的设备端引擎。
 - Office toolset: documents, tables, notes and text utilities the assistant can operate directly.
   办公工具集：文档、表格、笔记与文本工具，助手可直接操作。
 - On-device image editor with filters, layout and export.
   设备端图片编辑器，含滤镜、排版与导出。
 - File manager, project boards and date-organised working files.
   文件管理、项目看板与按日期组织的工作文件。
+- A bundled Termux runtime (Python + Node.js + Bash) that self-extracts on first use, plus lightweight BusyBox / Android Shell terminal layers.
+  内置 Termux 运行时（Python + Node.js + Bash），首次使用自解压，外加轻量的 BusyBox / Android Shell 终端层。
+- Landscape mode with a persistent sidebar for wider screens.
+  面向更宽屏幕、带常驻侧栏的横屏模式。
+- On-device AI memory (MemoryBox): per-conversation context, summaries and a long-term profile, ranked recall, conflict-aware write-back.
+  设备端 AI 记忆（记忆盒子）：单对话上下文、对话总结与长期档案，按相关度召回，冲突感知写回。
 - Plugin system with two package formats: `.axext` (plain) and `.axex` (encrypted).
   插件体系，两种插件包格式：`.axext`（明文）与 `.axex`（加密）。
 - Voice input, scanning, floating-ball quick access and small games.

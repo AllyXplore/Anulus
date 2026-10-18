@@ -2,11 +2,11 @@
 
 # Anulus
 
-**The AI hub of your Android phone — one AI assistant commanding your apps, files, tools, and devices, all on-device.**
+**The AI hub of your Android phone — one AI assistant that actually operates your apps, files, tools, and devices.**
 
 **Possibly the most powerful AI agent on Android — today, and built for what comes next.**
 
-[![Version](https://img.shields.io/badge/version-3.1.1-blue)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-3.1.4-blue)](CHANGELOG.md)
 [![Platform](https://img.shields.io/badge/platform-Android-brightgreen)](#requirements)
 [![Android](https://img.shields.io/badge/Android-7.0%2B-brightgreen)](#requirements)
 [![ABI](https://img.shields.io/badge/ABI-arm64--v8a-lightgrey)](#requirements)
@@ -25,11 +25,11 @@
 
 Anulus is the **AI hub of your Android phone** — far more than a chat interface. It is a unified platform where an AI assistant sits at the center of a suite of on-device tools — office documents, image editing, file management, project boards, notes, and small utilities — and can **directly operate them** through a local tool bus, with no cloud relay required.
 
-Unlike most AI apps that are thin chat wrappers around cloud APIs, Anulus is built around a fundamentally different philosophy: **everything that can run locally, runs locally.** Cloud AI providers are entirely optional — you bring your own credentials and endpoints, or you run models fully offline using the on-device engine.
+Unlike most AI apps that are thin chat wrappers around cloud APIs, Anulus is built so the assistant **actually operates your phone's real tools** — documents, images, files, and projects — through a local tool bus, instead of leaving you to copy-paste between apps. How it runs is pragmatic: cloud models use your own keys and endpoints, and a fully offline on-device engine is there when you want it; either way your data stays on your device.
 
 The app is built with **Tauri 2.0**, combining a native Android shell with a web-based UI layer, delivering a responsive experience while maintaining full access to device capabilities.
 
-**Built-in depth that grows with you.** Anulus ships with a 35+ tool system across 9 capability domains, and its **runtime integration interface** lets you plug your own execution environments in on top of the runtimes already bundled (Python 3.11 built in, Termux optional) — the ceiling is set by you, not by us. System-level access (Shizuku/Root) stays strictly opt-in for those who need it. Automation and deeper system capabilities remain firmly on our roadmap — they take long-term refinement to build right, and restraint like skipping blind screen-tapping is a compliance choice for the long haul, not a lack of ambition.
+**Built-in depth that grows with you.** Anulus ships with a 35+ tool system across 9+ capability domains, and — unlike most mobile AI apps — it bundles a **real development runtime**: a self-extracting Termux base system with Python and Node.js plus a Bash shell, unpacked into app storage on first use. You get a full Linux execution environment out of the box, then extend it your way with `pkg install` from official sources or by dropping a `.deb` for offline install. Lightweight layers (BusyBox 300+ commands, Android Shell) carry the everyday load with near-zero extra memory, and the heavy runtime stays off until you call it — so startup stays lean. The ceiling is set by you, not by us. System-level access (Shizuku/Root) stays strictly opt-in for those who need it. Automation and deeper system capabilities remain firmly on our roadmap — they take long-term refinement to build right, and restraint like skipping blind screen-tapping is a compliance choice for the long haul, not a lack of ambition.
 
 ---
 
@@ -169,19 +169,20 @@ flowchart TB
 
 ## Key Features
 
-### Built-in Tool System — 35+ tools, 9 capability domains
+### Built-in Tool System — 35+ tools, 9+ capability domains
 
-The AI doesn't just chat — it can **actually operate your phone** through a 35+ built-in tool system, grouped into 9 capability domains:
+The AI doesn't just chat — it can **actually operate your phone** through a 35+ built-in tool system, grouped into capability domains:
 
-- **Web & Information (5)**: live web search, file-content search (grep), filename search, chat-attachment reading, audio extraction
-- **File Operations (7)**: create / edit (full-file and line-level) / read / list / delete / rename / move files on your device
-- **Terminal & Execution (2)**: full terminal (BusyBox 300+ commands, Android Shell, Termux) and Python execution
-- **Multi-Agent Concurrency (2)**: concurrent multi-AI dispatch, parallel multi-tool scheduling
-- **Image (2)**: on-device photo editing (filters & adjustments) and AI image generation
-- **Tasks & Schedule (5)**: structured task plans (create/add/update), scheduled reminders with auto AI execution, structured question cards
-- **Text & Encoding (12)**: base64, hash, timestamp, UUID, password, JSON, encode (10 formats), JWT, regex, text layout, text coloring, feedback
-- **MCP (1+)**: external tool servers via the MCP protocol
-- **Plugin System**: third-party plugin calling
+- **Web & Information**: live web search with on-device result filtering; search *inside* files (grep-style content search) and by filename; read chat attachments; extract audio from video.
+- **File Operations**: create, edit (full-file and line-level), read, list, delete, rename, and move **real files on your device** — the AI works on your actual storage, not a sandbox copy.
+- **Terminal & Execution**: a full terminal over three layers — BusyBox (300+ commands), Android Shell, and the bundled Termux runtime (Python + Node.js + Bash); run Python scripts and shell commands directly.
+- **Multi-Agent Concurrency**: dispatch several AIs in parallel and schedule multiple tools to run at once, then merge the results.
+- **Image**: on-device photo editing (filters & adjustments, no upload) and AI image generation.
+- **Tasks & Schedule**: build structured task plans (create / add / update), set reminders that fire on the system alarm manager and can auto-run an AI step, and generate structured question cards.
+- **Text & Encoding**: base64, hash, timestamp, UUID, password generation, JSON formatting, encode across 10+ formats, JWT, regex, text layout, text coloring, and feedback capture.
+- **MemoryBox (on-device AI memory)**: the assistant's memory layer — it assembles per-conversation context, conversation summaries, and a long-term profile of you, ranks what's relevant, and writes new facts back with conflict-aware logic (merge / replace / decay / restore). Your history never leaves the device.
+- **MCP**: connect external tool servers that speak the MCP protocol.
+- **Plugin System**: call third-party plugins.
 
 This is the deepest on-device tooling available to an AI agent on Android — your assistant can search the web, write code, edit files, run terminals, and orchestrate multiple AI models in parallel, all on your phone.
 
@@ -213,12 +214,10 @@ This is the deepest on-device tooling available to an AI agent on Android — yo
 - Built-in archive and backup support
 
 ### Terminal & Developer Tools
-- Full terminal emulator with three execution layers:
-  - **BusyBox** (300+ built-in commands, bundled with the app)
-  - **Android Shell** (system commands)
-  - **Termux** (optional, full Linux environment)
-- Code editor with syntax highlighting (CodeMirror)
-- NexusScript reference documentation
+- **A real, bundled development runtime.** A self-extracting Termux base system with **Python and Node.js plus a Bash shell** ships inside the app and unpacks into app storage on first use — you get a full Linux execution environment out of the box.
+- **Self-configurable, easy to extend.** Grow it your way: `pkg install` from Termux's official sources (needs network), or drop a `.deb` package for fully offline installation. You bring your own environment without leaving the app.
+- **Light by default.** The everyday layers — BusyBox (300+ commands) and the Android Shell — add almost no extra memory. The heavy Termux runtime stays unpacked-but-idle until you actually run something, so startup stays lean.
+- Code editor with syntax highlighting (CodeMirror) and NexusScript reference documentation.
 
 ### Utilities
 - Voice input with multi-engine support
@@ -227,6 +226,13 @@ This is the deepest on-device tooling available to an AI agent on Android — yo
 - Small games (2048, Go board)
 - Scheduled reminders with alarm manager persistence
 - Text-to-speech (TTS) with auto-reading
+- Fully themeable: a free color palette lets you recolor the entire interface — background, accent, chat bubbles, and more — to your taste.
+
+### Landscape Mode
+A dedicated landscape layout for wider screens. Flip a switch in Settings and the whole app rotates to landscape and reorganizes into a persistent left sidebar plus a width-limited main area — built for using the phone with a keyboard, an external display, or simply more room. Orientation is driven **purely by the switch, not by the device's auto-rotate**, so it never triggers by accident in a wide browser or desktop window; a first-frame script applies the layout before paint to avoid a portrait flash.
+
+### Wearable Remote (scope)
+Anulus can talk to a wearable over Bluetooth through a reliable, framed transport — automatic segmentation, per-frame acknowledgment, and retransmission on timeout. From the wearable you can control the assistant's status and toggle plugin switches, and any risky command the assistant wants to run is first sent as a **safe-confirmation** request that must be approved on the device before it executes. System-level limit: official wearable firmware does not allow AI message text to be shown on the band, so the wearable controls and confirms rather than displays conversation content.
 
 ---
 
@@ -318,7 +324,7 @@ Official releases are published as attachments on the release page below:
 | --- | --- |
 | GitHub | https://github.com/AllyXplore/Anulus/releases/latest |
 
-Installer file name pattern: Anulus-<version>-aarm64-v8a.apk
+Installer file name pattern: Anulus-<version>-arm64-v8a.apk
 
 Only files downloaded from the page above are official. Every release lists a SHA-256 checksum and the signing certificate fingerprint — please check them before installing. See [docs/VERIFY.md](docs/VERIFY.md).
 
@@ -383,5 +389,5 @@ Copyright (c) 2026 AllyXplore. All rights reserved.
 Anulus is provided "as is", without warranty of any kind. "Anulus" and "AllyXplore" are names created and used by the developer; the rights in these names belong to the developer and they may not be used for other products without permission. Read [LICENSE](LICENSE) before installing.
 
 <div align="center">
-<sub>Anulus · local-first · privacy-respecting · maintained by Ax丶现 (AllyXplore)</sub>
+<sub>Anulus · privacy-respecting · maintained by Ax丶现 (AllyXplore)</sub>
 </div>
