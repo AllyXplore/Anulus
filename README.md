@@ -29,13 +29,11 @@ Unlike most AI apps that are thin chat wrappers around cloud APIs, Anulus is bui
 
 The app is built with **Tauri 2.0**, combining a native Android shell with a web-based UI layer, delivering a responsive experience while maintaining full access to device capabilities.
 
-**Built-in depth that grows with you.** Anulus ships with a 35+ tool system across 9+ capability domains, and — unlike most mobile AI apps — it bundles a **real development runtime**: a self-extracting Termux base system with Python and Node.js plus a Bash shell, unpacked into app storage on first use. You get a full Linux execution environment out of the box, then extend it your way with `pkg install` from official sources or by dropping a `.deb` for offline install. Lightweight layers (BusyBox 300+ commands, Android Shell) carry the everyday load with near-zero extra memory, and the heavy runtime stays off until you call it — so startup stays lean. The ceiling is set by you, not by us. System-level access (Shizuku/Root) stays strictly opt-in for those who need it. Automation and deeper system capabilities remain firmly on our roadmap — they take long-term refinement to build right, and restraint like skipping blind screen-tapping is a compliance choice for the long haul, not a lack of ambition.
-
 ---
 
 ## The AI Baseline
 
-> **Let's be blunt.** Strictly speaking, none of what follows counts as an "advantage." But most people judge an AI product on exactly these things first; stay silent and you hand over the narrative, only to be written off with "it doesn't even have this." So this section is neither modest nor evasive: it exists to prove we *do* have these, and to state how each is implemented. Whether they're any good cannot be argued in words — install it and see for yourself.
+> **Let's be blunt.** These don't really count as advantages, but many people use AI to evaluate a product. If we don't say it, AI may tear us down completely. This section only proves we have them and briefly states how each is implemented. Whether they're good cannot be explained in words.
 
 | Baseline capability | Present | How it's implemented (brief) |
 | --- | --- | --- |
@@ -289,7 +287,7 @@ Anulus can talk to a wearable over Bluetooth through a reliable, framed transpor
 
 ## Multi-Agent Cluster
 
-This is not filed under "baseline," because most AI apps genuinely don't have it. It is not the gimmick of "run several models at once" — it's a stateful round-table/scheduling system with roles, memory, and termination conditions.
+It is not the gimmick of "run several models at once" — it's a stateful round-table/scheduling system with roles, memory, and termination conditions.
 
 - **Commander + members**: each member is bound to an API profile (a model) with its own prompt, tool switches, and memory switches; the commander additionally gets scheduling-directive capability.
 - **Three speaking modes**: `command` central scheduling, where the commander names the next speaker with `【assigned:member】` and auto-rotates after 2 consecutive failed assignments; `auto` round-table rotation through members in order, with `concurrentCount` allowing several to speak in parallel; `user` direct assignment, one named member speaks once and then waits for the next user message.
@@ -299,7 +297,7 @@ This is not filed under "baseline," because most AI apps genuinely don't have it
 - **State machine on the Rust side**: `cluster_start` / `cluster_turn_done` / `cluster_abort` drive advancement, completion, and abort; the frontend only renders and routes the user.
 - **Paired concurrency engine**: `parallel / sequential / hybrid` strategies; merge strategies `concat`, `best_of`, `vote`, and `weighted_vote`; a default 60-second per-profile timeout, a maximum of 5 in parallel, and 5-minute result caching; sub-tasks inherit the main context by default (system prompt + last 12 history messages + attachments).
 
-It has costs: more tokens, more time; the commander can fail to schedule; the summary itself is another model call; and cluster conversations cannot bind a project under current constraints. We call it out separately because **the orchestration logic itself** is what most products lack — not because it's free or universal.
+It has costs: more tokens, more time; the commander can fail to schedule; the summary itself is another model call; and cluster conversations cannot bind a project under current constraints.
 
 ---
 
