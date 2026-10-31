@@ -33,3 +33,7 @@ Desktop.ini
 *~
 .idea/
 .vscode/
+
+# Gitee-only templates, not published to GitHub
+# Gitee 专用模板，不传到 GitHub
+.gitee/
